@@ -1,31 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AYUDA A UN PELUDO</title>
-</head>
-<body>
-    <h1>GATOS EN ADOPCION</h1>
-    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
-    <h2>Nuestros Gatos que buscan familia:</h2>
-    <ol>
-        <li>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067" alt="IMG Ginger" height="150"> 
-            
-            <a href="ginger.html">Ginger</a> 
-        </li>
-        <li> 
-            <img src="https://fotografias.lasexta.com/clipping/cmsimages02/2019/01/25/DB41B993-B4C4-4E95-8B01-C445B8544E8E/98.jpg?crop=4156,2338,x0,y219&width=1900&height=1069&optimize=high&format=webply" alt="IMG Tommy" height="126">
-            
-            <a href="tommy.html">Tommy</a> 
-        </li>
-        <li>
-            <img src="https://i.pinimg.com/564x/d4/70/aa/d470aa3359cb1e2ab49cd093e81ae3ea--evil-cats-future-cat.jpg" alt="IMG Lucifer" height="300">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <a href="lucifer.html">Lucifer</a>
+    <!-- Normalización y reseteo del estilo del navegador -->
+    <link rel="stylesheet" href="../ayudaPeludo/assets/css/reset.css" />
+    <link rel="stylesheet" href="../ayudaPeludo/assets/css/normalize.css" />
+
+    <!-- Hoja de estilo para Index -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Fuente de la página -->
+    <link href="assets/fuentes/more-sugar-font.css" rel="stylesheet" />
+
+    <!-- Título y logo -->
+    <title>Ayuda Peludos</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/logo/ayuda-peludos-logo-fondo.svg"
+    />
+
+    <title>Ayuda Peludos - Gatos</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/logo/ayuda-peludos-logo-fondo.svg"
+    />
+  </head>
+
+  <!-- Contenedor cabecera para la barra de menú o header -->
+  <header class="cabecera">
+    <!-- División para logo -->
+    <div class="cabecera__logo">
+      <img
+        src="assets/img/logo/ayuda-peludos-logo.svg"
+        alt="Logo ayuda peludos"
+        class="logo__img"
+      />
+    </div>
+    <!-- División para menú -->
+    <nav class="cabecera__menu">
+      <ul class="menu__lista">
+        <li class="menu__lista__item">
+          <a href="index.html" class="item__link">Inicio</a>
         </li>
-    </ol>
-</body>
+        <li class="menu__lista__item">
+          <a href="gatos_html/gatos.html" class="item__link">Gatos</a>
+        </li>
+        <li class="menu__lista__item">
+          <a href="perros_html/perros.html" class="item__link">Perros</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- Sección para titular y descripción del apartado Gatos -->
+    <section class="banner">
+      <div class="banner__background">
+        <!-- Caja para colocar fondo al texto -->
+        <h1 class="banner__titular">Gatos en adopción</h1>
+        <p class="banner__descripcion">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contenedor para mostrar gatos en adopción -->
+    <section class="contenedor__gatos">
+      <div class="gatos__header"> <!-- Título del apartado -->
+        <h1 class="gatos__titular">Nuestros gatos que buscan familia</h1>
+      </div>
+
+      <!-- Conjunto de tarjetas de cada gato -->
+      <div class="gatos__tarjetas">
+        <!-- Cada tarjeta tiene un contenedor para la imagen y uno para el link -->
+        <div class="tarjeta__individual">
+          <div class="tarjeta__contenedor__imagen">
+            <img src="../assets/img/gatos/gatos_ginger.jpg" alt="Gata Ginger" class="tarjeta__imagen" />
+          </div>
+          <div class="tarjeta__contenedor__link">
+            <a href="../gatos_html/ginger.html" class="tarjeta__link">Ginger</a>
+          </div>
+        </div>
+        <!-- Cada tarjeta tiene un contenedor para la imagen y uno para el link -->
+        <div class="tarjeta__individual">
+          <div class="tarjeta__contenedor__imagen">
+            <img src="../assets/img/gatos/gatos_tommy.jpg" alt="Gato Tommy" class="tarjeta__imagen" />
+          </div>
+          <div class="tarjeta__contenedor__link">
+            <a href="tommy.html" class="tarjeta__link">Tommy</a>
+          </div>
+        </div>
+        <!-- Cada tarjeta tiene un contenedor para la imagen y uno para el link -->
+        <div class="tarjeta__individual">
+          <div class="tarjeta__contenedor__imagen">
+            <img src="../assets/img/gatos/gatos_lucifer.jpg" alt="Gato Lucifer" class="tarjeta__imagen" />
+          </div>
+          <div class="tarjeta__contenedor__link">
+            <a href="lucifer.html" class="tarjeta__link">Lucifer</a>
+          </div>
+        </div>
+      </div>
+    </section>
 </html>
