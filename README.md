@@ -7,5 +7,13 @@ Proyecto de la asicnatura programacion web de desarrollo de un sitio con HTML y 
 
 ### ver 1.0.0
 
-* Jean 
+* **Jean**:
+    * Realizar páginas de perros individuales.
+    * Realizar principal de perros.
+* **Gabo**:
+    * Normalizar los HTML con nombres de clase.
+    * Agregar hojas de estilo.
+    * Formatear HTML de gatos y perros.
+* **Danilo**:
+    * Realizar páginas de gatos individuales.
 
