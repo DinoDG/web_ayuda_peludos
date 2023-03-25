@@ -6,120 +6,215 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Normalización y reseteo del estilo del navegador -->
-    <link rel="stylesheet" src="assets/css/reset.css" />
-    <link rel="stylesheet" src="assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
 
-    <!-- Hoja de estilo para Index -->
-    <link rel="stylesheet" src="assets/css/style.css" />
+    <!-- Hoja de estilo BootStrap -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
     <!-- Fuente de la página -->
-    <link src="assets/fuentes/more-sugar-font.css" rel="stylesheet" />
+    <link href="../assets/fonts/more-sugar-font.css" rel="stylesheet" />
 
     <!-- Título y logo -->
-    <title>Ayuda Peludos</title>
+    <title>Amor con Patas</title>
+
+    <!-- ícono -->
     <link
       rel="icon"
+      href="../assets/img/logo/logo-bg.svg"
       type="image/x-icon"
-      src="assets/img/logo/ayuda-peludos-logo-fondo.svg"
     />
   </head>
 
   <body>
-    <!-- Contenedor cabecera para la barra de menú o header -->
+    <!-- Cabecera -->
     <header class="cabecera">
-      <!-- División para logo -->
-      <div class="cabecera__logo">
-        <img
-          src="assets/img/logo/ayuda-peludos-logo.svg"
-          alt="Logo ayuda peludos"
-          class="logo__img"
-        />
-      </div>
-      <!-- División para menú -->
-      <nav class="cabecera__menu">
-        <ul class="menu__lista">
-          <li class="menu__lista__item">
-            <a href="index.html" class="item__link">Inicio</a>
-          </li>
-          <li class="menu__lista__item">
-            <a href="gatos_html/gatos.html" class="item__link">Gatos</a>
-          </li>
-          <li class="menu__lista__item">
-            <a href="perros_html/perros.html" class="item__link">Perros</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary fs-5" href="index.html">
+            <img
+              src="../assets/img/logo/logo.svg"
+              alt="Logo Amor con Patas"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+            Amor con Patas</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Adopción
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Perros</a></li>
+                  <li><a class="dropdown-item" href="#">Gatos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contáctanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <!-- Sección para titular y descripción de la empresa -->
-    <section class="banner">
-      <div class="banner__background">
-        <!-- Caja para colocar fondo al texto -->
-        <h1 class="banner__titular">ONG - Ayuda Peluda</h1>
-        <p class="banner descripcion">
-          orem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra,
-          urna a aliquam vulputate, nulla mauris placerat augue, eget venenatis
-          quam elit sit amet nulla. Nullam non aliquet nulla.
-        </p>
+    <!-- Banner Carousel -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../assets/img/banner/banner-pet-big.jpg"
+            class="d-block w-100"
+            alt="Imagen gato y perro."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../assets/img/banner/banner-dog-big.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../assets/img/banner/banner-cat-big.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
       </div>
+    </div>
+    <!-- Titular y descripción de la empresa -->
+    <section class="Sobre-nosotros">
+      <h1 class="banner-titular h1 text-center fs-1 text-primary fst-bold py-4">ONG - Amor con Patas</h1>
+      <p class="banner-descripcion px-3 text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra,
+        urna a aliquam vulputate, nulla mauris placerat augue, eget venenatis
+        quam elit sit amet nulla. Nullam non aliquet nulla.
+      </p>
     </section>
 
     <!-- Sección de integrantes -->
+
     <section class="integrantes">
-      <h2 class="titular__integrantes">Nuestros integrantes</h2>
-      <ul class="integrantes__lista">
-        <li class="integrantes__lista__item">
-          Gabriel Serrano - Jefe Area Informacion
-        </li>
-        <li class="integrantes__lista__item">
-          Danilo Jara - Atencion al publico
-        </li>
-        <li class="integrantes__lista__item">
-          Jean Piere Guital - Veterinario
-        </li>
-      </ul>
+      <h2 class="titular-integrantes banner-titular h1 text-center fs-1 text-primary fst-bold py-4">Nuestros integrantes</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Gabriel Serrano
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit orci et convallis lobortis. Praesent nulla ipsum, rhoncus congue vulputate eget, ultrices at tellus. Vestibulum sit amet faucibus nunc. Quisque.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Danilo Jara
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit orci et convallis lobortis. Praesent nulla ipsum, rhoncus congue vulputate eget, ultrices at tellus. Vestibulum sit amet faucibus nunc. Quisque.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Jean Piere Guital
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit orci et convallis lobortis. Praesent nulla ipsum, rhoncus congue vulputate eget, ultrices at tellus. Vestibulum sit amet faucibus nunc. Quisque.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Sección de tipos de adopción (Gatos - Perros) -->
-    <section class="secciones-ayuda">
-      <h2 class="secciones-ayuda__titular">Nuestras secciones de ayuda</h2>
+    <section class="secciones-ayuda mb-5">
+      <h2 class="secciones-ayuda__titular banner-titular h1 text-center fs-1 text-primary fst-bold py-4 px-2">Nuestras secciones de ayuda</h2>
       <!-- Cada caja o subsección incluye dentro imagen - link -->
-      <div class="secciones-ayuda__gatos">
-        <div class="gatos__contenedor__img">
-          <img
-            src="assets/img/index/home_gatos_img.jpg"
-            alt="Foto de gatos"
-            class="gatos__img"
-          />
+      <div class="sub-secciones d-flex flex-column flex-md-row align-items-center justify-content-center px-2 gap-4">
+        <div class="card card-gatos" style="width: 18rem;">
+          <img src="../assets/img/banner/banner-cat-big (2).jpg" class="card-img-top" alt="Foto Gato">
+          <div class="card-body">
+            <h5 class="card-title">Adopta un gatito</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">¡Miau!</a>
+          </div>
         </div>
-        <div class="gatos__contenedor__link">
-          <a href="gatos_html/gatos.html" class="gatos__link">Gatos</a>
+
+        <div class="card card-perros" style="width: 18rem;">
+          <img src="../assets/img/banner/banner-dog-big (2).jpg" class="card-img-top" alt="Foto perro">
+          <div class="card-body">
+            <h5 class="card-title">Adopta un gatito</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">¡Guau!</a>
+          </div>
         </div>
       </div>
-      <!-- Cada caja o subsección incluye dentro imagen - link -->
-      <div class="secciones-ayuda__perros">
-        <div class="perros__contenedor__img">
-          <img
-            src="assets/img/index/home_perros_img.jpg"
-            alt="Foto de perros"
-            class="perros__img"
-          />
-        </div>
-        <div class="perros__contenedor__link">
-          <a href="perros_html/perros.html" class="perros__link">Perros</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Sección para pie de págin. -->
-    <footer class="pie-pagina">
-      <div class="pie-pagina__contenedor__logo">
-        <img
-          src="assets/img/logo/ayuda-peludos-logo.svg"
-          alt="Logo Ayuda Peludos"
-          class="pie-pagina__logo"
-        />
+    <footer class="pie-pagina row-cols-1">
+      <div class="col">
+        <img src="../assets/img/logo/logo.png" class="img-fluid" alt="">
       </div>
+      
     </footer>
+    <!-- Script para funciones JS de BootStrap -->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
