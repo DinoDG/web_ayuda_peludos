@@ -5,15 +5,16 @@ Proyecto de la asicnatura programacion web de desarrollo de un sitio con HTML y 
 
 ## Versionamiento
 
-### ver 1.0.0
+### ver 1.0
+* Confección de esqueleto HTML.
+* Diseño de marca y logo.
+* Definición de colores institucionales.
+* Construcción de contenido de ejemplo.
 
-* **Jean**:
-    * Realizar páginas de perros individuales.
-    * Realizar principal de perros.
-* **Gabo**:
-    * Normalizar los HTML con nombres de clase.
-    * Agregar hojas de estilo.
-    * Formatear HTML de gatos y perros.
-* **Danilo**:
-    * Realizar páginas de gatos individuales.
-
+### ver 2.0
+* Reboot del proyecto.
+* Reorganización de la arquitectura.
+* Implementación de framework BootStrap.
+* Actualización de esquema HTML.
+* Implementación de nuevos recursos visuales.
+* Implementación de modelo Movil First.
