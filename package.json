@@ -1,0 +1,23 @@
+{
+  "name": "web_ayuda_peludos",
+  "version": "2.0.0",
+  "description": "Proyecto de la asignatura Programacion Web de desarrollo de un sitio con HTML y CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DinoDG/web_ayuda_peludos.git"
+  },
+  "keywords": [],
+  "author": "Jean Pier Guital, Danilo Jara, Gabriel Serrano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DinoDG/web_ayuda_peludos/issues"
+  },
+  "homepage": "https://github.com/DinoDG/web_ayuda_peludos#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
